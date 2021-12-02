@@ -1,0 +1,35 @@
+.nav-btn {
+    background-color: transparent;
+    color: $f-color-white;
+    border: 1.4px solid $f-color-white;
+    padding: .2rem .6rem;
+    font-weight: 500;
+    border-radius: .25rem;
+    transition: .1s background-color linear;
+
+    &:hover {
+        background-color: $color-green;
+        border: 1.4px solid transparent;
+    }
+}
+
+.cta-btn {
+    background-color: $color-green;
+    color: $f-color-white;
+    border: none;
+    font-family: $f-primary;
+    padding: .35rem .8rem;
+    font-weight: 500;
+    border-radius: .25rem;
+    font-size: 1.1rem;
+    transition: transform linear .1s;
+
+    &:hover {
+        transform: translate(-.1rem, -.1rem);
+        box-shadow: 0 .1rem .2rem rgb(85, 84, 84);
+    }
+
+    &:active {
+        transform: translate(0, 0);
+    }
+}

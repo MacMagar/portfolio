@@ -1,0 +1,75 @@
+.ham-logo {
+    width: 1.5rem;
+    cursor: pointer;
+
+    &:active {
+        border: 1.3px solid black;
+    }
+}
+
+.dynamic-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: .2s all ease-out;
+}
+
+.triggered {
+    top: -5rem;
+}
+
+
+.navigation {
+    &__text {
+        list-style: none;
+        margin-left: 1.5rem;
+        &:not(:last-child) {
+            padding-top: .18rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $f-color-white;
+        font-family: $f-primary;
+        text-transform: capitalize;
+        font-size: 1.13rem;
+        font-weight: 300;
+
+        &:hover {
+            color: lighten($f-color-white, 20);
+        }
+    }
+}
+
+header {
+    background-color: $color-blue;
+}
+
+.ham-menu {
+    background-color: rgb(251, 251, 251);
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -272px;
+    z-index: 99;
+    cursor: pointer;
+    transition: .25s all ease-out;
+
+    &__close {
+        width: 1.7rem;
+        margin-top: 1.5rem;
+        margin-right: .8rem;
+
+        &:active {
+            border: 1.3px solid $color-blue;
+        }
+    }
+}
+
+.expanded {
+    right: 0 !important;
+}

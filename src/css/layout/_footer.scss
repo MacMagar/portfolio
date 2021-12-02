@@ -1,0 +1,25 @@
+.footer {
+    background-color: $color-brown;
+
+    &__item {
+        list-style: none;
+        padding: .3rem 0;
+    }
+
+    &__link {
+        color: $f-color-white;
+        text-decoration: none;
+        font-family: $f-primary;
+        font-size: .8rem;
+
+        &:hover {
+            color: lighten($f-color-white, 10);
+            text-decoration: underline;
+        }
+    }
+
+    &__img {
+        width: 4.5rem;
+        margin-left: 1rem;
+    }
+}

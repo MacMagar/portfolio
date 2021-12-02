@@ -1,0 +1,65 @@
+.hero {
+    background-color: $color-blue;
+    padding: .5rem 1rem 7rem 1rem;
+
+    @media (min-width: 768px) {
+        padding: .5rem 1rem 10rem 1rem;
+    }
+
+    @media (min-width: 992px) {
+        padding: .5rem 1rem 12.4rem 1rem;
+    }
+
+    &__img {
+        width: 95%;
+        margin-top: 3rem;
+        
+        @media (min-width: 768px) {
+            width: 65%;
+        }
+
+        @media (min-width: 992px) {
+            width: 90%;
+        }
+        
+    }
+}
+.svg-wave {
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+}
+
+.feature {
+    @media (max-width: 768px) {
+        padding: 1rem;
+    }
+    &-img {
+        width: 100%;
+        max-width: 500px;
+
+        @media (max-width: 768px) {
+            max-width: 400px;
+        }
+
+    }
+}
+
+.pos-fix {
+    @media (min-width: 1200px) {
+        position: relative;
+        top: -2rem;
+    }
+}
+
+.brand {
+    background-color: $color-grey;
+    &__logo {
+        width: 1.5rem;
+
+        @media (min-width: 1400px) {
+            width: 2rem;
+        }
+    }
+    
+}

@@ -1,0 +1,103 @@
+html {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $f-color-black;
+
+}
+body {
+    background-color: rgb(251, 251, 251);
+}
+
+.ham-menu {
+    &__unordered {
+        list-style: none;
+        margin-top: 3.3rem;
+        padding: 0 0 0 2rem;
+    }
+    &__item {
+        padding: 1rem 0;
+    }
+    &__link {
+        color: $f-color-black;
+        text-decoration: none;
+        font-size: 1.35rem;
+        font-style: italic;
+
+        &:hover {
+            text-decoration: underline;
+            color: darken($f-color-black, 20);
+        }
+    }
+}
+
+.hero{
+
+    &__text-heading {
+        color: $f-color-white;
+        font-family: $f-secondary;
+        font-size: 3rem;
+
+        
+        @media (min-width: 768px) {
+            font-size: 3.8rem;
+        }
+    }
+
+    &__text-para {
+        color: $f-color-white;
+        font-family: $f-primary;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+}
+
+.feature-text {
+    &__heading {
+        font-size: 2.8rem;
+        font-family: $f-secondary;
+        color: $f-color-black;
+
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+
+    &__para {
+        font-family: $f-primary;
+        color: $f-color-black;
+        font-size: 1.3rem;
+        line-height: 2rem;
+
+
+        @media (max-width: 576px) {
+            padding: 0 1rem;
+        }
+    }
+}
+
+.card {
+
+    &__heading {
+        font-family: $f-secondary;
+        font-size: 2.5rem;
+    }
+    &__para {
+        font-family: $f-primary;
+        font-size: 1.1rem;
+    }
+}
+
+.brand {
+    &__text {
+        font-family: $f-secondary;
+        font-size: 2.1rem;
+            
+    }
+}
+.copyright {
+    font-family: $f-primary;
+    color: $f-color-white;
+    font-weight: 100;
+    font-size: .8rem;
+    margin-right: 1rem;
+}
